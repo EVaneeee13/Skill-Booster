@@ -1,0 +1,3 @@
+[build]
+publish = "build" # Change this to your runnable directory
+command = "npm run build" # Change if your build command is different
