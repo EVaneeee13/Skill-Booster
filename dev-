@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'none'; img-src 'self'; connect-src 'none';">
     <title>My Simple Website</title>
     <style>
         body {
@@ -32,6 +34,9 @@
             color: #3498db;
             text-decoration: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +45,17 @@
     </header>
     <main>
         <p>This is a simple web page. You can customize it as you like!</p>
-        <p>To learn more, visit <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>.</p>
+        <p>To learn more, visit 
+            <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer" aria-label="MDN Web Docs">
+                MDN Web Docs
+            </a>.
+        </p>
     </main>
     <footer>
         &copy; 2025 My Simple Website
     </footer>
+    <noscript>
+        <p style="color: red;">This website requires JavaScript for full functionality. Please enable it in your browser.</p>
+    </noscript>
 </body>
 </html>
